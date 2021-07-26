@@ -1,0 +1,36 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+<h2>Categories</h2>
+
+<ul>
+    <li>
+        <form action="{% url 'auctions:categories' %}" method="POST">
+            {% csrf_token %}
+            <input type="text" name="category" value="books" hidden>
+            <input type="submit" name="submit" class="submit-link" value="Books">
+        </form>
+    </li>
+    <li>
+        <form action="{% url 'auctions:categories' %}" method="POST">
+            {% csrf_token %}
+            <input type="text" name="category" value="electronics" hidden>
+            <input type="submit" name="submit" class="submit-link" value="Electronics">
+        </form>
+    </li>
+    <li>
+        <form action="{% url 'auctions:categories' %}" method="POST">
+            {% csrf_token %}
+            <input type="text" name="category" value="home_kitchen" hidden>
+            <input type="submit" name="submit" class="submit-link" value="Home & Kitchen">
+        </form>
+    </li>
+    <li>
+        <form action="{% url 'auctions:categories' %}" method="POST">
+            {% csrf_token %}
+            <input type="text" name="category" value="toys" hidden>
+            <input type="submit" name="submit" class="submit-link" value="Toys">
+        </form>
+    </li>
+</ul>
+{% endblock %}

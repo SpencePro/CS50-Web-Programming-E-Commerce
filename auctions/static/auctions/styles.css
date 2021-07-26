@@ -1,0 +1,108 @@
+body {
+    padding: 10px;
+}
+
+.listing {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 10px;
+    border: solid 1px #8fbcc4;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.listing-content {
+    text-align: center;
+}
+
+h2, h4 {
+    margin-left: 2rem;
+}
+
+.right {
+    text-align: left;
+    display: inline;
+}
+
+#right-index {
+    margin-top: 0.5rem;
+}
+
+.left {
+    text-align: left;
+    float: left;
+    margin-left: 2rem;
+    width: 40%;
+    margin-right: 1rem;
+    border-right: solid 1px #8fbcc4;
+    display: inline;
+}
+
+.left-grp {
+    margin-left: 1rem;
+}
+
+.submit-link {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+#category {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#category-label {
+    width: 15%;
+    margin: auto;
+    float: left;
+}
+
+.submit-btn {
+    background-color: #00b9fc;
+    color: white;
+    border: solid 1px;
+}
+
+.submit-btn:hover {
+    background-color: #04a7e0;
+}
+
+.submit-link:hover {
+    color: #0056b3;
+}
+
+.comment-section {
+    margin-left: 35rem;
+}
+
+.comment-section form {
+    margin-bottom: 1rem;
+}
+
+#create-form {
+    width: 30rem;
+}
+
+#create-form input, #create-form select {
+    float: right;
+}
+
+#create-category {
+    width: 182px;
+}
+
+#create-left {
+    width: 40%;
+}
+
+.error-content {
+    margin-left: 2rem;
+}
+

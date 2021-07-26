@@ -1,0 +1,26 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+<h2>Watchlist</h2>
+<h4>Listings you are keeping track of</h4>
+
+<div class="content">
+    {% if listings %}
+    <ul>
+        {% for listing in listings %}
+            {% if listing != none %}
+            <li>
+                <a class="nav-link" style="float:left; padding-top:0" href="{% url 'auctions:listing' listing.id %}">{{ listing.name }}</a>
+                <form action="{% url 'auctions:remove' listing.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" name="submit" class="submit-btn" value="Remove" style="float:left">
+                </form>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    {% else %}
+    <h5>You have no listings in your watchlist</h5>
+    {% endif %}
+</div>
+{% endblock %}

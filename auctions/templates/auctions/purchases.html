@@ -1,0 +1,19 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+<h2>Your Purchases</h2>
+<div class="content">
+    {% if listings %}
+        <ul>
+            {% for listing in listings %}
+            <li>
+                <h5><a class="nav-link" href="{% url 'auctions:listing' listing.id %}">{{ listing.name }}</a></h5>
+                <p>Purchased for <strong>${{ listing.sale_price }}</strong> on {{ listing.date_sold }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h5>You have no purchases yet</h5>
+    {% endif %}
+</div>
+{% endblock %}
