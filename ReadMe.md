@@ -15,5 +15,5 @@ setting a price
 3. view all items that are currently for sale (active listings)
 4. add items to a watchlist where they can track the price of items they wish to purchase
 5. bid on items they wish to purchase
-6. end an auction for an item to listed, and in doing so sell the item to the highest bidder
+6. end an auction for an item they listed, and in doing so sell the item to the highest bidder
 
